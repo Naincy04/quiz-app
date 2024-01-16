@@ -13,13 +13,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color.fromARGB(255, 10, 93, 175)!,
-              Color.fromARGB(255, 2, 39, 95)!,
+              Color.fromARGB(255, 10, 93, 175),
+              Color.fromARGB(255, 2, 39, 95),
             ],
           ),
         ),
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => QuestionScreen(),
+                      builder: (context) => const QuestionScreen(),
                     ),
                   );
                 },

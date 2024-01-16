@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/qstns.dart';
-import 'package:quiz_app/models/quiz_questions.dart'; // Make sure to import the correct file
+// Make sure to import the correct file
 
 class QuestionScreen extends StatefulWidget {
+  const QuestionScreen({super.key});
+
   @override
   State<QuestionScreen> createState() => _QuestionScreenState();
 }

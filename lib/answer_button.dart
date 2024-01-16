@@ -8,7 +8,7 @@ class AnswerButton extends StatelessWidget {
   final void Function() onPressed;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 300,
       child: ElevatedButton(
         style: ButtonStyle(
