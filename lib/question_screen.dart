@@ -26,25 +26,25 @@ class QuestionScreen extends StatelessWidget {
                   child: Text(
                     "Question 1",
                     style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
                       color: Colors.white,
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 60,
                 ),
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color?>(Colors.blue[900]),
+                    backgroundColor: MaterialStateProperty.all<Color?>(
+                        Color.fromARGB(255, 7, 40, 92)),
                   ),
                   onPressed: () {},
                   child: const Text(
                     "Answer 1",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
@@ -55,14 +55,14 @@ class QuestionScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color?>(Colors.blue[900]),
+                    backgroundColor: MaterialStateProperty.all<Color?>(
+                        Color.fromARGB(255, 7, 40, 92)),
                   ),
                   onPressed: () {},
                   child: const Text(
                     "Answer 2",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
@@ -73,14 +73,14 @@ class QuestionScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ButtonStyle(
-                    backgroundColor:
-                        MaterialStateProperty.all<Color?>(Colors.blue[900]),
+                    backgroundColor: MaterialStateProperty.all<Color?>(
+                        Color.fromARGB(255, 7, 40, 92)),
                   ),
                   onPressed: () {},
                   child: const Text(
                     "Answer 3",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
@@ -98,7 +98,7 @@ class QuestionScreen extends StatelessWidget {
                   child: const Text(
                     "Answer 4",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 15,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
