@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer_button.dart';
-import 'package:quiz_app/data/qstns.dart';
-// Make sure to import the correct file
+
+import 'package:quiz_app/result_screen.dart';
 
 class QuestionScreen extends StatefulWidget {
-  const QuestionScreen({super.key});
+  const QuestionScreen({Key? key}) : super(key: key);
 
   @override
   State<QuestionScreen> createState() => _QuestionScreenState();
@@ -12,30 +12,22 @@ class QuestionScreen extends StatefulWidget {
 
 class _QuestionScreenState extends State<QuestionScreen> {
   var currentQuestionIndex = 0;
+  List<String> selectedAnswer = [];
 
-  void answerQuestionIndex() {
+  void answerQuestionIndex(String answer) {
     setState(() {
+      selectedAnswer.add(answer);
+      print(selectedAnswer);
       currentQuestionIndex = currentQuestionIndex + 1;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // Replace with the actual function to get questions
-
     if (currentQuestionIndex >= question.length) {
-      // Handle the case when there are no more questions
-      return const Scaffold(
-        body: Center(
-          child: Text(
-            'Quiz completed!',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      );
+      // If all questions are answered, navigate to the result screen
+      return ResultScreen(
+          choosenAnswer: selectedAnswer, questionLength: question.length);
     }
 
     final currentQuestion = question[currentQuestionIndex];
@@ -75,10 +67,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   height: 60,
                 ),
                 ...currentQuestion.getshuffledAnswers().map(
-                  (items) {
+                  (item) {
                     return AnswerButton(
-                      answerText: items,
-                      onPressed: answerQuestionIndex,
+                      answerText: item,
+                      onPressed: () => answerQuestionIndex(item),
                     );
                   },
                 ),
