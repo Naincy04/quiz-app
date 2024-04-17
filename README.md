@@ -12,6 +12,6 @@ This is a simple quiz app built using Flutter, where users can answer multiple-c
 
 ## Screenshots
 
-<img src="https://github.com/Naincy04/My-Portfolio-App/blob/master/portfolio.png"> &nbsp; &nbsp;
+<img src="https://github.com/Naincy04/quiz-app/blob/master/quiz_app.png"> &nbsp; &nbsp;
 
 Happy coding!
