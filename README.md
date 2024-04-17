@@ -13,10 +13,4 @@ This is a simple quiz app built using Flutter, where users can answer multiple-c
 ![Screenshot 1](screenshots/screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
 
-## Installation
 
-1. Make sure you have Flutter installed. If not, follow the instructions on the [official Flutter website](https://flutter.dev/docs/get-started/install).
-2. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/quiz-app-flutter.git
