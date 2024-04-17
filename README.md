@@ -10,8 +10,8 @@ This is a simple quiz app built using Flutter, where users can answer multiple-c
 
 ## Screenshots
 
-![Screenshot 1]()
-![Screenshot 2]()
-![Screenshot 3](WhatsApp Image 2024-04-17 at 9.00.01 AM (1).jpeg)
+## Screenshots
 
+<img src="https://github.com/Naincy04/My-Portfolio-App/blob/master/portfolio.png"> &nbsp; &nbsp;
 
+Happy coding!
